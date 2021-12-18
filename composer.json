@@ -1,0 +1,19 @@
+{
+    "name": "arnob-monir/aamar-pay",
+    "description": "Implement of aamar pay payment gateway",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ArnobMonir\\AamarPay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arnob Monir",
+            "email": "aarnob.monir@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
