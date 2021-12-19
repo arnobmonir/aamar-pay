@@ -40,7 +40,7 @@ class AamarPay
         curl_close($ch);
         self::redirect_to_merchant($url_forward);
     }
-    function redirect_to_merchant($url)
+    static function redirect_to_merchant($url)
     {
 
 ?>
