@@ -28,7 +28,7 @@ class AamarPay
             'cus_country' => $cus_country,
             'cus_phone' => $cus_phone,
         );
-        $url = config('aamarpay.is_sand_box') ? config('aamarpay.sand_box_url') : config('aamarpay.production_url');
+        $url = config('aamarpay.url');
         $fields_string = http_build_query($fields);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_VERBOSE, true);
@@ -56,7 +56,7 @@ class AamarPay
 
         <body onLoad="closethisasap();">
 
-            <form name="redirectpost" method="post" action="<?php echo 'https://sandbox.aamarpay.com/' . $url; ?>"></form>
+            <form name="redirectpost" method="post" action="<?php echo config('aamarpay.url') . $url; ?>"></form>
             <!-- for live url https://secure.aamarpay.com -->
         </body>
 

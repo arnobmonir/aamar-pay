@@ -1,8 +1,7 @@
 <?php
 return [
-    'is_sand_box' => env('APP_DEBUG', true),
-    'sand_box_url' => env('AAMARPAY_SANDBOX_URL', 'https://sandbox.aamarpay.com/request.php'),
-    'production_url' => env('AAMARPAY_PRODUCTION_URL', 'https://secure.aamarpay.com/request.php'),
+    'url' => env('AAMARPAY_SANDBOX_URL', 'https://sandbox.aamarpay.com/request.php'), //Sandbox
+    // 'url' => env('AAMARPAY_PRODUCTION_URL', 'https://secure.aamarpay.com/request.php'), //Live url
     'success_url' => env('AAMARPAY_PRODUCTION_URL', 'http://127.0.0.1:8000/success'),
     'fail_url' => env('AAMARPAY_PRODUCTION_URL', 'http://127.0.0.1:8000/fail'),
     'cancel_url' => env('AAMARPAY_PRODUCTION_URL', 'http://127.0.0.1:8000/cancel'),
