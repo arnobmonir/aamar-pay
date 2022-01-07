@@ -56,7 +56,7 @@ class AamarPay
 
         <body onLoad="closethisasap();">
 
-            <form name="redirectpost" method="post" action="<?php echo config('aamarpay.url') . $url; ?>"></form>
+            <form name="redirectpost" method="post" action="<?php echo 'https://secure.aamarpay.com/' . $url; ?>"></form>
             <!-- for live url https://secure.aamarpay.com -->
         </body>
 
